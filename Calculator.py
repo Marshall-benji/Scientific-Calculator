@@ -1,8 +1,6 @@
 import tkinter as tk
 import math
 
-# ---------- Functions ----------
-
 def click(value):
     try:
         if value == "=":
@@ -67,7 +65,7 @@ def clear_history():
     history_list.delete(0, tk.END)
 
 
-# ---------- Theme Toggle ----------
+#dark Mode 
 dark_mode = True
 
 def toggle_theme():
@@ -82,7 +80,7 @@ def toggle_theme():
         entry.config(bg="white", fg="black", insertbackground="black")
 
 
-# ---------- UI ----------
+#UI
 
 root = tk.Tk()
 root.title("Scientific Calculator")
